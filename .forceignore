@@ -1,0 +1,34 @@
+# List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
+# More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
+#
+
+package.xml
+# LWC configuration files
+**/jsconfig.json
+**/.eslintrc.json
+
+# LWC Jest
+**/__tests__/**
+
+# Push Ignores
+tth-/main/default/profiles/
+tth-/main/default/appMenus/AppSwitcher.appMenu-meta.xml
+tth-/main/default/flexipages/LightningService_UtilityBar.flexipage-meta.xml
+#tth-/main/default/objects/Account/*
+
+ido-version/main/default/wave
+ido-version/main/default/wave
+ido-version/main/default/profileSessionSettings
+ido-version/main/default/profiles
+ido-version/main/default/profilePasswordPolicies
+ido-version/main/default/permissionsets
+
+
+# Pull ignores
+AppSwitcher.AppMenu
+Admin.Profile.
+
+
+WaveApplication.EinsteinBotsV2
+WaveDataset.EinsteinBotsV2
+WaveXmd.EinsteinBotsV21

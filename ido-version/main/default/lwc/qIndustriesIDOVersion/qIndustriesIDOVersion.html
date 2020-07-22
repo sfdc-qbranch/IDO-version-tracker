@@ -1,0 +1,54 @@
+<template>
+    <lightning-card title="IDO Version Details" icon-name="custom:custom9">
+        <div class="slds-m-around_medium">
+        <template if:true={metadatarecord.data}>
+                <div class="c-container">
+                    <lightning-layout>
+                        <lightning-layout-item padding="around-small">
+                            <div class="header-column">
+                                <p class="field-title" title="IDO_Release_Name">IDO Release</p>
+                                <p>{metadatarecord.data.IDO_Release_Name__c}</p>
+                            </div>
+                        </lightning-layout-item>
+
+                        <lightning-layout-item padding="around-small">
+                            <div class="header-column">
+                                <p class="field-title" title="SDO_Trialforce_Template_ID">SDO Trialforce Template ID</p>
+                                <p>{metadatarecord.data.SDO_Trialforce_Template_ID__c}</p>
+                            </div>
+                        </lightning-layout-item>
+
+                                                <lightning-layout-item padding="around-small">
+                                                    <div class="header-column">
+                                                        <p class="field-title" title="Core_Release_Name">Core Release Name</p>
+                                                        <p>{metadatarecord.data.Core_Release_Name__c}</p>
+                                                    </div>
+                                                </lightning-layout-item>
+
+
+                                                                        <lightning-layout-item padding="around-small">
+                                                                            <div class="header-column">
+                                                                                <p class="field-title" title="Core_Release_Number">Core Release Number</p>
+                                                                                <p>{metadatarecord.data.Core_Release_Number__c}</p>
+                                                                            </div>
+                                                                        </lightning-layout-item>                                                
+
+                    </lightning-layout>
+                </div>
+
+
+        </template>
+        <template if:true={metadatarecord.error}>
+          Is error
+            {metadatarecord.error}
+        </template>
+        </div>
+
+
+    </lightning-card>
+
+
+
+
+
+</template>

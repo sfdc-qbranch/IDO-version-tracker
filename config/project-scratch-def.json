@@ -1,0 +1,11 @@
+{
+  "orgName": "IDO Version Info",
+  "edition": "Developer",
+  "features": ["LiveMessage"],
+  "settings": {
+      "lightningExperienceSettings": {
+          "enableS1DesktopEnabled": true
+
+      }
+  }
+}

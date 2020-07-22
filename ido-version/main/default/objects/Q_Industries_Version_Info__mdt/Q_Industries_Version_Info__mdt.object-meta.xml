@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Contains version information about the IDO</description>
+    <label>Q Industries Version Info</label>
+    <pluralLabel>Q Industries Version Info</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
